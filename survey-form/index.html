@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Nuno's Survey Form</h1>
+    <p id = "description">This is my first survery form I am making with HTML and CSS!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name" >Enter Your Name:<input id="name" type="text" placeholder="Enter Your Name" required></input></label>
+        <label id="email-label" for="email">Enter Your Email:<input id="email" type="email" placeholder="Enter Your Email" required pattern="[a-z0-9]{8,}
+"></input></label>
+<label id="number-label" for="age">Enter Your Age:<input id="number" type="number" placeholder="Enter Your Age" min=12 max=100></input></label>
+<label for="dropdown"> What the fuck is dropdown?
+  <select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="YES">YES</option>
+    <option value="NO">NO</option>
+  </select></label>
+  <label for="Manchester United"> Man Utd
+    <input id="Manchester United" name = "Manchester" type="radio" value="Manchester United"></input>
+  </label>
+  <label for="Manchester City"> Man City<input id="Manchester City" name="Manchester" type="radio" value="Manchester City"></input></label>
+      </fieldset>
+      <fieldset>
+        <legend>Which football player do you like?</legend>
+        <input type="checkbox" name="player" id="Hazard" value="Hazard" checked><label for="Hazard">Eden Hazard</label>
+        <input type="checkbox" name="player" id="Salah" value="Salah"><label for="Salah">Mohamed Salah</label>
+        <input type="checkbox" name="player" id="Saka" value="Saka"><label for="Saka">Bukayo Saka</label>
+      </fieldset>
+      <fieldset><legend>Comments</legend>
+      <textarea id="comments" name="comments" type="textarea" rows="10" cols="50" placeholder="This is so cool...."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"></input>
+    </form>
+  </body>
